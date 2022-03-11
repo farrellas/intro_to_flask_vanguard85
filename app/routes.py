@@ -5,8 +5,6 @@ from flask import render_template, redirect, url_for
 def home():
     return redirect(url_for('ig.posts'))
     names = ['Shoha', "Dylan", "Christopher", "Alex", "Blair"]
-
-    
     return render_template('index.html', my_list=names)
 
 
